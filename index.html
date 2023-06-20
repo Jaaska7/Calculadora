@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./styles/darktheme.css"> -->
+    <link rel="stylesheet" href="styles/lighttheme.css">
+    <script src="theme.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="particles-js">
+            <div class="calculatordiv">
+                <div class="topbuttons">
+                    <h1>Calculator</h1>
+                    <div class="git-mode">
+                        <a href="https://github.com/Jaaska7">
+                            <div class="gitbutton"></div>
+                        </a>
+                        <button id="theme-button" onclick="changeTheme()">
+                            <img src="https://cdn.icon-icons.com/icons2/2787/PNG/512/sun_and_moon_icon_177460.png"
+                                alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="first-row">
+                    <input type="text" name="result" id="result" placeholder="Result" readonly />
+                    <input type="button" value="C" onclick="result.value=''" id="clear-button" />
+                </div>
+                <div class="second-row">
+                    <input type="button" value="1" onclick="liveScreen(1)" />
+                    <input type="button" value="2" onclick="liveScreen(2)" />
+                    <input type="button" value="3" onclick="liveScreen(3)" />
+                    <input type="button" value="+" onclick="liveScreen('+')" />
+                </div>
+                <div class="third-row">
+                    <input type="button" value="4" onclick=" liveScreen(4)" />
+                    <input type="button" value="5" onclick=" liveScreen(5)" />
+                    <input type="button" value="6" onclick=" liveScreen(6)" />
+                    <input type="button" value="-" onclick="liveScreen('-')" />
+                </div>
+                <div class="fourth-row">
+                    <input type="button" value="7" onclick="liveScreen(7)" />
+                    <input type="button" value="8" onclick="liveScreen(8)" />
+                    <input type="button" value="9" onclick=" liveScreen(9)" />
+                    <input type="button" value="x" onclick="liveScreen('*')" />
+                </div>
+                <div class="fifth-row">
+                    <input type="button" value="/" onclick="liveScreen('/')" />
+                    <input type="button" value="0" onclick="liveScreen(0)" />
+                    <input type="button" value="." onclick="liveScreen('.')" />
+                    <input type="button" value="=" onclick="calculate(result.value)" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script src="particles.js"></script>
+</body>
+
+</html>
